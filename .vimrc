@@ -2,21 +2,11 @@
 colorscheme arx
 set bg=dark
 
-" Pathogen plugin function to load all plugins in the bundle folder
-<<<<<<< HEAD
-" call pathogen#infect()
-=======
-call pathogen#infect()
->>>>>>> ecf73cc0a19bd577aa1259379e57286534bb2bb6
 " Automatically re-source .vimrc when it is edited
 au! BufWritePost .vimrc source %
 
 " Vim statusline (powerline)
-<<<<<<< HEAD
-set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim
-=======
-set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
->>>>>>> ecf73cc0a19bd577aa1259379e57286534bb2bb6
+set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim/
 
 " Display line numbers on right side
 set number
@@ -54,51 +44,13 @@ syntax on
 " Set 256 terminal colors
 set t_Co=256
 " Filetype plugins
-<<<<<<< HEAD
-filetype plugin on
-=======
 filetype plugin on 
->>>>>>> ecf73cc0a19bd577aa1259379e57286534bb2bb6
 filetype indent on
 
 " Close vim if NERDTree is last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary")	| q | endif
 
-" Show syntax highlighting groups for word under cursor
-function! <SID>SynStack()
-  if !exists("*synstack")
-<<<<<<< HEAD
-return
-  endif
-  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunc
-=======
-	return
-  endif
-  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunc 
->>>>>>> ecf73cc0a19bd577aa1259379e57286534bb2bb6
-nmap <Leader>h :call <SID>SynStack()<CR>
-
-" Change omnicomplete selection keybindings
-function! OmniPopup(action)
-    if pumvisible()
-        if a:action == 'j'
-            return "\<C-N>"
-        elseif a:action == 'k'
-            return "\<C-P>"
-        endif
-    endif
-    return a:action
-endfunction
-inoremap <silent>j <C-R>=OmniPopup('j')<CR>
-inoremap <silent>k <C-R>=OmniPopup('k')<CR>
-
-<<<<<<< HEAD
-" Stay in visual mode when indenting or unindenting blocks of text
-=======
 " Stay in visual mode when indenting or unindenting blocks of text 
->>>>>>> ecf73cc0a19bd577aa1259379e57286534bb2bb6
 vnoremap < <gv
 vnoremap > >gv
 

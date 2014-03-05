@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+Arx Color Theme
+
+-->
+
+<style-scheme id="arx" _name="Arx" version="1.0">
+
+  <author>Tom Wickesser</author>
+  <_description>Dark color scheme using the Arx color palette</_description>
+
+  <!-- Arx Palette -->
+  <color name="Dark"		value="#0D0D0D"/>
+  <color name="DarkGrey"	value="#262626"/>
+  <color name="LightGrey"	value="#404040"/>
+  <color name="Light"		value="#E6E6E6"/>
+
+  <color name="Red"		value="#B33535"/>
+  <color name="Green"		value="#74B335"/>
+  <color name="Blue"		value="#3574B3"/>
+
+  <color name="Cyan"		value="#35B3B3"/>
+  <color name="Magenta"		value="#7435B3"/>
+  <color name="Yellow"		value="#B3B335"/>
+
+  <!-- Global Settings -->
+  <style name="text" foreground="Light" background="Dark"/>
+  <style name="selection" background="LightGrey" underline="true"/>
+  <style name="cursor" foreground="Light"/>
+  <style name="current-line" foreground="List" background="DarkGrey"/>
+  <style name="line-numbers" foreground="Dark" background="DarkGrey"/>
+
+  <!-- Bracket Matching -->
+  <style name="bracket-match" foreground="Light" background="DarkGrey" bold="true"/>
+  <style name="bracket-mismatch" foreground="Light" background="Red" bold="true"/>
+
+  <!-- Right Margin -->
+  <style name="right-margin" foreground="DarkGrey" background="Blue"/>
+  
+  <!-- Search Matching -->
+  <style name="search-match" foreground="Dark" background="Yellow"/>
+
+  <!-- Comments -->
+  <style name="def:comment" foreground="LightGrey" italic="true"/>
+  <style name="def:shebang" foreground="LightGrey" bold="true"/>
+  <style name="def:doc-comment-element" italic="true"/>
+
+  <!-- Constants -->
+  <style name="def:constant" foreground="Red"/>
+  <style name="def:string" italic="true"/>
+  <style name="def:special-char" bold="true"/>
+  <style name="def:special-constant" foreground="Red"/> 
+  <style name="def:floating-point" foreground="Red"/>
+
+  <!-- Identifiers -->
+  <style name="def:identifier" foreground="Blue"/>
+
+  <!-- Statements -->
+  <style name="def:statement" foreground="Blue" bold="true"/>
+
+  <!-- Types -->
+  <style name="def:type" foreground="Magenta" bold="true"/>
+
+  <!-- Others -->
+  <style name="def:preprocessor" foreground="Green" bold="true"/>
+  <style name="def:error" foreground="aluminium1" background="scarletred2" bold="true"/>
+  <style name="def:note" background="butter1" foreground="aluminium4" bold="true"/>
+  <style name="def:underlined" italic="true" underline="true"/>
+
+  <!-- Language specific -->
+  <style name="diff:added-line" foreground="butter2"/>
+  <style name="diff:removed-line" foreground="skyblue1"/>
+  <style name="diff:changed-line" foreground="plum1"/>
+  <style name="diff:diff-file" foreground="chameleon1" bold="true"/>
+  <style name="diff:location" foreground="chameleon1"/>
+  <style name="diff:special-case" foreground="#white" bold="true"/>
+
+
+</style-scheme>
